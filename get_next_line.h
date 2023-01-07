@@ -6,7 +6,7 @@
 /*   By: nafrin <nafrin@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/19 16:18:08 by nafrin            #+#    #+#             */
-/*   Updated: 2022/11/19 16:18:09 by nafrin           ###   ########.fr       */
+/*   Updated: 2023/01/07 20:40:29 by nafrin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,11 @@
 # include <sys/types.h>
 # include <sys/uio.h>
 # include <unistd.h>
+# include <limits.h>
+
+# ifndef BUFFER_SIZE
+#  define BUFFER_SIZE 42
+# endif 
 
 char	*get_next_line(int fd);
 char	*ft_strjoin(char const *s1, char const *s2);
